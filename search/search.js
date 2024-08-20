@@ -3,7 +3,7 @@ const animeList = document.getElementById("resultContainer");
 const animecount = document.getElementById("animecount");
 
 const searchanime = async (searchBox) => {
-  const res = await fetch("/search/data/anime.json");
+  const res = await fetch("/data/anime.json");
   const animedata = await res.json();
 
   let fits = animedata.filter((anime) => {
