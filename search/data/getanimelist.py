@@ -5,7 +5,7 @@ import requests
 import json
 import time
 
-url_template = "https://animoasa.glitch.me/animelist/{}"
+url_template = "https://animetize-api-orcin.vercel.app/anime-list/{}"
 start_num = 1
 end_num = 91
 animelist = []
