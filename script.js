@@ -21,14 +21,12 @@ const apiEndpoint = "no-drab.vercel.app";
 // Randomly set player iframes to these video onLoad
 var youtubeLinks = [
     "https://www.youtube.com/embed/3yOVIxOHiaw",
-    "https://www.youtube.com/embed/nfAPAvGGH4g",
-    "https://www.youtube.com/embed/S7W135mNveI",
-    "https://www.youtube.com/embed/X1M69l7ZGlw",
-    "https://www.youtube.com/embed/IUtFAblCT1o",
-    "https://www.youtube.com/embed/Wi6tTATXnaw",
-    "https://www.youtube.com/embed/5xkzzO5nNow",
-    "https://www.youtube.com/embed/PgAswqBtrUk",
-    "https://www.youtube.com/embed/uwwU55zBYlQ"
+    "https://www.youtube.com/embed/KYxU6ZxTq0M",
+    "https://www.youtube.com/embed/1wJ_X7v4PbI",
+    "https://www.youtube.com/embed/Sa0wK3LVK6s",
+    "https://www.youtube.com/embed/2NoO8dzYTo0",
+    "https://www.youtube.com/embed/kO5yC2JKLHI",
+    "https://www.youtube.com/embed/v6TmGbduAGU"
 ];
 var randomLink = youtubeLinks[Math.floor(Math.random() * youtubeLinks.length)];
 videoPlayer.src = randomLink;
