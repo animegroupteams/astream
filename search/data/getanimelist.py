@@ -1,30 +1,7 @@
-# Run this for updating the anime.json
-# change <end_num> for last pagination from gogoanime anime list page
-
-import requests
-import json
-import time
-
-url_template = "https://animetize-api-orcin.vercel.app/anime-list/{}"
-start_num = 1
-end_num = 91
-animelist = []
-
-for num in range(start_num, end_num + 1):
-    url = url_template.format(num)
-    print("Getting data for page ", num)
-    response = requests.get(url)
-    data = response.json()
-    animelist.extend(data)
-
-with open('anime.json', 'w') as f:
-    json.dump(animelist, f)
-
-with open('anime.json', 'r') as f:
-    count = json.load(f)
-
-num_objects = len(count)
-
-print("Done! Saved as anime.json")
-print("Total Anime:", num_objects)
-time.sleep(1000)
+# run this to get the new anime.json
+# Google Collab is your best choice when running
+# running this code .
+# when you are done running this code in Google Collab create a 
+# new cell and execute this code 
+# from google.colab import files
+files.download('anime.json')
